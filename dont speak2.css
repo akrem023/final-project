@@ -1,0 +1,175 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Creepster', cursive;
+    color: white;
+    background-color: #000;
+}
+
+.container {
+    background: url('Don_t_Speak-424272844-large.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid #b30000;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.9);
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 15px rgba(255, 0, 0, 0.8);
+    animation: flicker 1s infinite;
+}
+
+p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.8);
+}
+
+.play-button {
+    font-size: 1.8em;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #333;
+    border: 3px solid #b30000;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: #b30000;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+}
+
+.navbar {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.play-button a {
+    text-decoration: none;
+    color: #fff; 
+}
+
+.navbar a {
+    color: #ff3333;
+    text-decoration: none;
+    font-family: 'Metal Mania', cursive;
+    font-size: 22px;
+    margin: 0 20px;
+    position: relative;
+    letter-spacing: 3px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff6666;
+    text-shadow: 0 0 15px #ff6666, 0 0 25px #ff6666;
+}
+
+.navbar a:active {
+    color: #ff9999;
+    text-shadow: 0 0 20px #ff9999, 0 0 40px #ff9999;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    20% { opacity: 0.7; }
+    40% { opacity: 1; }
+    60% { opacity: 0.5; }
+    80% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+
+.movie-info {
+    max-width: 900px;
+    text-align: left;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+    border: 3px solid #b30000;
+    position: relative;
+    z-index: 1;
+    margin: 20px auto;
+}
+
+.movie-info h2 {
+    color: #ff3333;
+    text-shadow: 3px 3px 10px #000;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.movie-info p {
+    color: #e0e0e0;
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.movie-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.movie-info ul li {
+    margin: 15px 0;
+    font-size: 1.3em;
+    color: #ff4d4d;
+    position: relative;
+    padding-left: 35px;
+    text-shadow: 2px 2px 6px #000;
+    font-weight: bold;
+}
+
+.movie-info ul li:before {
+    content: "\2716";
+    position: absolute;
+    left: 0;
+    color: #ff4d4d;
+    font-size: 1.7em;
+    top: 0;
+    text-shadow: 3px 3px 7px #000;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    color: #b30000;
+    font-size: 1.2em;
+}

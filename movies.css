@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #b30000;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 10px #000;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.movie-item {
+    background-color: #333;
+    color: #ff3333;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    font-size: 1.2em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.movie-item a img {
+    width: 100%;      /* Makes the image width 100% of the .movie-item width (400px) */
+    height: 100%;     /* Makes the image height 100% of the .movie-item height (600px) */
+
+}
+.movie-item a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.movie-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 1);
+}
+
+.footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: #bbb;
+    border-top: 2px solid #333;
+}
+
+/* General image container for all images */
+.img-cont img {
+    width: 100%;      /* Forces images to match the container width (400px) */
+    height: 100%;     /* Forces images to match the container height (600px) */
+    object-fit: contain; /* Ensures image aspect ratio is maintained without distortion */
+}
+.img-cont{
+    width: 90%;
+    height: 85%;
+}
+
+.movie-title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ff3333;
+    text-shadow: 2px 2px 5px #000;
+}
+/* Navbar Styling */
+.navbar {
+    background-color: #000; /* Black background */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.9); /* Intense white shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navbar Links */
+.navbar a {
+    color: #fff; /* White color */
+    text-decoration: none;
+    font-family: 'Impact', 'Arial Black', sans-serif; /* Meme-style font */
+    font-size: 24px;
+    margin: 0 20px;
+    position: relative;
+    letter-spacing: 2px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Navbar Hover Effect */
+.navbar a:hover {
+    color: #ff6666; /* Lighter blood-red */
+    text-shadow: 0 0 15px #ff6666, 0 0 25px #ff6666; /* Bright glowing effect */
+}
+
+/* Navbar Active Effect */
+.navbar a:active {
+    color: #ff9999; /* Even lighter red */
+    text-shadow: 0 0 20px #ff9999, 0 0 40px #ff9999; /* Intense glow */
+}

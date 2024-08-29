@@ -1,0 +1,134 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.container {
+    background: url('horror-games-3500-x-1989-wallpaper-ufqhjqgcbib6vdr1.jpg') no-repeat center center/cover;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    padding: 100px;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px red;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px red;
+}
+.play-button a {
+    text-decoration: none;
+    color: #fff; 
+}
+.play-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    color: rgb(245, 6, 6);
+    background-color: rgb(7, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+}
+
+.play-button:hover {
+    background-color: darkred;
+}
+/* Navbar Container */
+.navbar {
+    background-color: #111; /* Dark background */
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Intense shadow for a dark atmosphere */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navbar Links */
+.navbar a {
+    color: #c0392b; /* Blood red color */
+    text-decoration: none;
+    font-family: 'Metal Mania', cursive; /* Horror-themed, rough font */
+    font-size: 20px;
+    margin: 0 15px;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for effects */
+    position: relative;
+    letter-spacing: 2px; /* Spacing for a more dramatic effect */
+}
+
+/* Hover Effect */
+.navbar a:hover {
+    color: #e74c3c; /* Brighter blood red on hover */
+    text-shadow: 0 0 5px #e74c3c, 0 0 10px #e74c3c; /* Subtle glow for horror effect */
+}
+
+/* Active Link Effect */
+.navbar a:active {
+    color: #ff7675; /* Lighter red when active */
+    text-shadow: 0 0 10px #ff7675, 0 0 20px #ff7675; /* Brighter glow */
+}
+
+/* Slashing Effect on Hover */
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #c0392b;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Custom Font Import (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+/* Styling the nightmare paragraph */
+.nightmare-paragraph {
+    font-family: 'Creepster', cursive; /* Use a horror-themed font */
+    color: #D32F2F; /* Blood-red color */
+    background-color: #000; /* Black background */
+    padding: 20px;
+    border: 2px solid #D32F2F; /* Red border */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* Glowing red shadow */
+    text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.8); /* Text shadow for eerie effect */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    width: 30%;
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
